@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+
+    <SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:max="100"
+             android:id="@+id/progress"
+             android:progress="20"/>
+    <RatingBar android:id="@+id/rating"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/roomRatingBar"
+               android:numStars="5"
+               android:stepSize="1"
+               android:rating="4"/>
+    <TextClock android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:format12Hour="yyyy-MM-dd hh : mm : ss "/>
+    <AnalogClock android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:dial="@drawable/panel"
+                android:hand_hour="@drawable/hour"
+                android:hand_minute="@drawable/min"/>
+    <Chronometer android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:countDown="true"
+                android:id="@+id/chronometer"/>
+</LinearLayout>
